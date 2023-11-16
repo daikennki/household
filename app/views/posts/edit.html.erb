@@ -1,0 +1,11 @@
+<div class="contents row">
+    <div class="container">
+        <h4>更新画面<h4>
+        <%= form_with(model: @post, local: true) do |form| %>
+      <%= form.text_field :date, placeholder: "日付" %>
+      <%= form.text_field :category_id, placeholder: "カテゴリ" %>
+      <%= form.text_field :price, placeholder: "値段" %>
+      <%= form.submit "登録する", class: "custom-submit-button" %>
+    <% end %>
+  </div>
+</div>
