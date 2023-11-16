@@ -1,0 +1,427 @@
+@charset "utf-8"
+
+/* header情報 */
+.grid-6 a{
+    text-decoration: none;
+    color:blueviolet
+}
+
+.grid-6{
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.grid-7{
+    text-decoration: none;
+}
+
+/* headerとbodyの間の仕切りの線　*/
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.header_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+/* 仕切り線のスタイル */
+.header_bar {
+  border-bottom: 2px solid #ddd;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+
+
+
+/* footer情報 */
+.top-household{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.top-household li {
+    flex: 1; /* 各リストアイテムが均等な幅を持つようにする */
+    text-align: center; /* テキストを中央揃えにする */
+    padding: 10px; /* パディングを追加 */
+    border-right: 1px solid #ccc; /* 右にボーダーを追加（最後のアイテムは除く） */
+}
+
+.top-household li:last-child {
+    border-right: none; /* 最後のアイテムのボーダーを削除 */
+  }
+  
+  .top-household li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+
+.household-list{
+    padding:10px 30px;
+    margin:2.5px;
+
+    background-color: rgba(135, 206, 235,1);
+    border-radius: 5px;
+
+    text-align: center;
+    color:white;
+}
+
+.household-monthly{
+    padding:10px 30px;
+    margin:2.5px;
+
+    background-color: rgba(135, 206, 235,1);
+    border-radius: 5px;
+
+    text-align: center;
+    color:white;
+}
+
+.household-every-year{
+    padding:10px 30px;
+    margin:2.5px;
+
+    background-color: rgba(135, 206, 235,1);
+    border-radius: 5px;
+
+    text-align: center;
+    color:white;
+}
+
+.household-balance{
+    padding:10px 30px;
+    margin:2.5px;
+
+    background-color: rgba(135, 206, 235,1);
+    border-radius: 5px;
+
+    text-align: center;
+    color:white;
+}
+
+.household-goal{
+    padding:10px 30px;
+    margin:2.5px;
+
+    background-color: rgba(135, 206, 235,1);
+    border-radius: 5px;
+
+    text-align: center;
+    color:white;
+}
+
+.household-home{
+    padding:10px 30px;
+    margin:2.5px;
+
+    background-color: rgba(135, 206, 235,1);
+    border-radius: 5px;
+
+    text-align: center;
+    color:white;
+}
+
+.footer-border {
+    position: relative;
+      overflow: visible;
+      text-align: center;
+      color: #ccc;
+      border-width: 0;
+    height: 8px;
+    background-image: repeating-linear-gradient(45deg, #ccc 0, #ccc 1px, transparent 0, transparent 50%), repeating-linear-gradient(135deg, #ccc 0, #ccc 1px, transparent 0, transparent 50%);
+    background-size: 8px 8px;
+  }
+  
+  .footer-border::after {
+    position: absolute;
+      top: -0.6em;
+      left: 50%;
+      display: inline-block;
+      background: #ffffff;
+  }
+
+
+
+
+/* /posts　一覧ページのcss */
+h1{
+    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .house-list {
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  thead th {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 10px;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tbody td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .contents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .contents tr {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  @media (max-width: 768px) {
+    .contents td {
+      width: 50%;
+    }
+  }
+
+
+
+
+
+
+/* /posts/new の収支入力ページ css */
+
+body {
+  margin: 0;
+  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f8f8;
+}
+
+.contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  max-width: 400px; /* 画面の横幅に合わせて調整 */
+  width: 100%;
+}
+
+.custom-submit-button{
+  width: 30%; /* 登録ボタンの幅調整 */
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+form submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .contents {
+    height: auto;
+  }
+}
+
+/* cssでカラフルなフォームに変更　*/
+
+
+
+.container {
+  background-color: #ffcc00; /* カラフルな背景色に変更 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+}
+
+h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ff5733; /* カラフルなフォーカス時の色に変更 */
+}
+
+button {
+  padding: 12px;
+  background-color: #4caf50; /* カラフルなボタンの色に変更 */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #45a049; /* ボタンのホバーカラーを変更 */
+}
+
+
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f8f8;
+}
+
+.contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #ffcc00;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 60%; /* ブラウザ横幅の60%まで引き伸ばす */
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box; /* 追加：パディングやボーダーも含めたボックスサイズを設定 */
+}
+
+h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s ease-in-out;
+  width: 100%; /* 追加：親要素に対して100%の幅を設定 */
+}
+
+input:focus {
+  outline: none;
+  border-color: #ff5733;
+}
+
+button {
+  padding: 12px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+
+
