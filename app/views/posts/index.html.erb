@@ -1,0 +1,39 @@
+<div class="house-list">
+    <h1>家計簿 一覧</h1>
+</div>
+
+
+
+<table>
+    <thead>
+      <tr>
+        <th>日付</th>
+        <th>カテゴリ</th>
+        <th>金額</th>
+        <th>変更</th>
+      </th>
+    </thead>
+    <tbody>
+        <div class="contents row">
+            <% @posts.each do |post| %>
+                <tr>
+                    <td><%= post.date %></td>
+                    <td><%= post.category_id %></td>
+                    <td><%= post.price %></td>
+                    <td class="sub-lists">
+                        <Ul ckass="sub-list">   
+                            <li class="sub">
+                                <%= link_to '編集', edit_post_path(post.id) %>
+                            </li>
+                            <li class="sub">
+                                <%= link_to '削除', post_path(post.id), data: { turbo_method: :delete } %>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            <% end %>
+        </div>
+    </tbody>
+</table>
+
+
