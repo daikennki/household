@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>楽ちん家計簿</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+    <link rel="stylesheet" href="sanitize.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header_bar row">
+        <h2 class="grid-6"><a href="/">楽ちん<br>家計簿</a></h2>
+        <a href="#"><%= image_tag '家の無料アイコン.png' %></a>
+      </div>
+    </header>
+    <%= yield %>
+    <footer>
+      <div class="footer-border"><br></br>
+      <ul class="top-household">
+        <li class="household-list"><a href="/posts">一覧</a></li>
+        <li class="household-monthly"><a href="#">月 合計</a></li>
+        <li class="household-every-year"><a href="#">年 合計</a></li>
+        <li class="household-balance"><a href="/posts/new">収支</a></li>
+        <li class="household-goal"><a href="#">目標</a></li>
+        <li class="household-home"><a href="#">home</a></li>
+      </ul>
+      <p>
+        Copyright 2023 daiki Takeshima.
+      </p>
+    </footer>
+  </body>
+</html>
